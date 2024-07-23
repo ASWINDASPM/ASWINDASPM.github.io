@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f8f636e9c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Python Fullstack Developer</p>
+                <h1>Hi, I'm <span> ASWIN DAS </span><br>from Kerala</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------about------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Experienced Web Developer adept in all
+                        stages of advanced web development.
+                        Knowledgeable in user interface, testing, and
+                        debugging processes.
+                        Knowledge in Python, HTML, CSS, Java Script,
+                        PostgreSQL,REST API & Cloud Technologies,
+                        Able to effectively self-manage during
+                        independent projects,as well as collaborate
+                        in a team setting.
+                        </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><Span>Python 3</Span><br>Language Proficiency</li>
+                            <li><Span>Django & DRF</Span><br>Web Frameworks</li>
+                            <li><Span>HTML, CSS & JavaScript</Span><br>Front-End Technologies</li>
+                            <li><Span>Bootstrap</Span><br>Responsive Design</li>
+                            <li><Span>Angular</Span><br>Front-End Framework</li>
+                            <li><Span>AWS & DevOps</Span><br>Cloud Services</li>
+                            <li><Span>SQL & PostgreSQL DB</Span><br>Database Management</li>
+                            <!-- <li><Span>UI/UX</Span><br>Designing web/app interface</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                           <li><span>2023 OCTOBER - 2023 DECEMBER</span><br>ANGULAR DEVELOPER INTERN at Glowsis Technologies</li>
+                           <li><span>2022 AUGUST - 2023 AUGUST</span><br>PYTHON FULLSTACK DEVELOPER at VASS SYSTEMS LLP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>BACHELOR OF TECHNOLOGY , INFORMATION TECHNOLOGY <br>
+                                GOVERMENT ENGINEERING COLLEGE SREEKRISHNAPURAM PALAKKAD</li>
+                            <li><span>2018</span><br>HIGHER SECONDARY, COMPUTER SCIENCE <br>
+                                GVHSS ATHOLI, KOZHIKODE</li>
+                            <li><span>2016</span><br>HIGH SCHOOL (THSLC) <br>
+                                GOVERNMENT TECHNICAL HIGH SCHOOL WESTHILL, KOZHIKODE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------services------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Creating the look and feel of websites, ensuring they are visually appealing, user-friendly, and aligned with the brand's identity. The role involves designing layouts, user interfaces, and interactive elements, as well as collaborating with developers and content creators to bring the website to life.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Development</h2>
+                    <p>Front-end and back-end development, creating complete web applications. This role involves working with a variety of technologies, including HTML, CSS, JavaScript, Bootstrap, Angular for the front end, and Python for the back end. The developer ensures the seamless integration of user-facing elements with server-side logic, creating a robust, scalable, and efficient web application.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Backend Developer</h2>
+                    <p>Specializing in Python 3, Django, and Django Rest Framework (DRF) is responsible for building and maintaining the server-side logic, ensuring high performance and responsiveness to requests from the frontend. The role involves creating reusable, testable, and efficient code and implementing security and data protection measures.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------portfolio------------- -->
+    <div id="portfolio">
+        <div class="conatiner">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Static Website</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>music App</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online shopping website</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- --------------------contact------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> aswindaspm2@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 8943820114</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100009232367911&mibextid=JRoKGi"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/aswin_da_s?igsh=MWpnaHljYjhnY3huYw=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aswindaspm/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+        <p>copyright © Aswin Das.</p>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwgYtTOBFhG8f2R7QJ6Cy05MnIQkpO05JQSqz9d-W3Q3lkXm_Z8BtFbIQj8T4nwLiul/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
